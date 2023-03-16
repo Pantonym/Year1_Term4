@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Links -->
+    <link rel="stylesheet" href="https://use.typekit.net/cgw4zgv.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/97babfe0d4.js" crossorigin="anonymous"></script>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Jquery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Javascript Link -->
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+
+    <!--Sign in and Log in Start-->
+    <form class="loginContainer" id="registerContainer" method="POST" onsubmit="return false">
+        <div class="leftContainer">
+            <div class="leftContainer_TopContainer">
+                <div class="leftTopContainer_head" id="leftTopContainer_head">
+                    Welcome
+                </div>
+                <div class="leftTopContainer_description" id="leftTopContainer_description">
+                    Already registered click below to <b>Log in</b>.
+                </div>
+            </div>
+            <div class="leftContainer_button">
+                <button type="button" class="btn-secondary_signup" id="btn_Switch_signup">
+                    Sign up
+                </button>
+            </div>
+        </div>
+        <div class="rightContainer">
+            <div class="rightTopContainer">
+                <div class="rightTopContainer_head" id="rightTopContainer_head">
+                    Log in
+                </div>
+                <div class="rightTopContainer_description" id="rightTopContainer_description">
+                    Enter your personal details to login.
+                </div>
+            </div>
+            <div class="rightTopContainer_input-section_details" id="rightTopContainer_input-section_details">
+                <input type="text" class="input-section_Name input" id="input-section_Name" placeholder="Name" required />
+                <input type="email" class="input-section_Email input" id="input-section_Email" placeholder="Email" required />
+                <input type="password" class="input-section_Password input" id="input-section_Password" placeholder="Password" required />
+                <input type="password" class="input-section_Password input" id="input-section_confirmPassword" placeholder="Confirm Password" required />
+            </div>
+            <div class="rightTopContainer_input-section_agree" id="rightTopContainer_input-section_agree">
+                <input type="checkbox" class="input-section_checkbox" />
+                <div class="rightTopContainer_input-section_agree-description">Remember Me</div>
+            </div>
+            <div class="rightTopContainer_input-section_button">
+                <a class="a_signUp-link" href="home.html">
+                    <input class="btn-primary_signup" id="btn_sign_up" name="checkbox" type="submit" value="Log in">
+                </a>
+            </div>
+        </div>
+    </form>
+    <!--Sign in and Log in End-->
+
+    <!-- Modal Start -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-contentLeft">
+                <i class="fa-regular fa-circle-check"></i>
+                <p id="modal-text">Succefully logged in</p>
+                <p id="modal-text">Successfully logged in</p>
+            </div>
+            <span class="close">&times;</span>
+        </div>
+
+    </div>
+    <!-- Modal End -->
+
+    <!-- Modal Start -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-contentLeft">
+                <i class="fa-regular fa-circle-check"></i>
+                <p id="modal-text">Successfully logged in</p>
+            </div>
+            <span class="close">&times;</span>
+        </div>
+
+    </div>
+    <!-- Modal End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid neue font_white">
+        <div class="footer">
+            <div class="row">
+                <ul>
+                    <li class="footer_texts left"><img src="Icons_and_logo/Icons_and_logo/BingeWatch_LOGO_White.svg">
+                    </li>
+                    <li class="footer_texts left">Frequently Asked Questions</li>
+                    <li class="footer_texts left">Contact Us</li>
+                    <li class="footer_texts left">
+                        <div> Help Center <br> Terms of Use</div>
+                    </li>
+
+                    <li class="footer_texts left">
+                        <div>
+                            Connect With Us <br>
+                            <ul style="margin-left: -25px;">
+                                <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/instagram_img.svg">
+                                </li>
+                                <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/twitter_img.svg">
+                                </li>
+                                <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/facebook_img.svg">
+                                </li>
+                                <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/TikTokLogo.svg">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="footer_texts left">BingeWatch© all rights reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+</body>
+
+</html>

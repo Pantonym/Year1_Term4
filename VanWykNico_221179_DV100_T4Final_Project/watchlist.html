@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Links -->
+    <link rel="stylesheet" href="https://use.typekit.net/cgw4zgv.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/97babfe0d4.js" crossorigin="anonymous"></script>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Jquery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Javascript Link -->
+    <script src="js/index.js"></script>
+
+    <!--API Key-->
+    <!-- https://api.themoviedb.org/3/movie/550?api_key=7cc71a5efa6094ed2d8e41dd271bd6ee -->
+</head>
+
+<body>
+
+<!--Navbar start -->
+<nav class="nav_sticky">
+    <div class="container-fluid container-fluid_navbar">
+        <a class="navbar-brand" href="home.html">
+            <img src="Icons_and_logo/Icons_and_logo/BingeWatch_LOGO2.svg">
+        </a>
+
+        <ul class="navbar-nav navbar_pages me-auto mb-2 mb-lg-0" style="display: inline-table;">
+            <li class="nav-item navbar_li">
+                <a class="nav-link" href="home.html">HOME</a>
+            </li>
+
+            <li class="nav-item navbar_li">
+                <a class="nav-link" href="movies.html">MOVIES</a>
+            </li>
+
+            <li class="nav-item navbar_li">
+                <a class="nav-link active_page" href="watchlist.html">WATCHLIST</a>
+            </li>
+        </ul>
+
+        <input type search="search" class="search_appearance" id="search_appearance" placeholder="Search"
+            data-search>
+
+        <ul class="nav navbar-nav account">
+            <li>
+                <a class="nav_accountLink" href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="account_name left" id="account_name_home">Jan</div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+<!-- Navbar end -->
+
+    <!-- Search Display Start -->
+    <div class="search_container_bg" id="bg_searchContainer">
+        <div class="search_container">
+            <div class="searchResults_container">
+
+                <div id="searchItem_container1">
+                    <div id="searchItem1">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img1">
+                            <div id="searchItem_Title1"> <!--Movie Title--> </div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container2">
+                    <div id="searchItem2">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img2">
+                            <div id="searchItem_Title2"><!--Movie Title--></div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container3">
+                    <div id="searchItem3">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img3">
+                            <div id="searchItem_Title3"><!--Movie Title--></div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container4">
+                    <div id="searchItem4">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img4">
+                            <div id="searchItem_Title4"><!--Movie Title--></div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container5">
+                    <div id="searchItem5">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img5">
+                            <div id="searchItem_Title5"><!--Movie Title--></div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+            </div>
+            <div class="showingAllResults_container">
+                Showing all results
+            </div>
+        </div>
+    </div>
+    <!-- Search Display End -->
+
+    <!--Watchist Header-->
+    <div class="container-fluid neue font_white" id="watchlist_header">
+        <div>
+            <h3 id="watchlist" class="font_54 font_bold">
+                MY WATCHLIST
+            </h3>
+
+            <p id="watchlist_desc">
+                <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem eveniet a
+            necessitatibus,
+            similique deleniti provident reiciendis beatae sapiente asperiores totam veritatis ipsam
+            officiis nemo ipsa incidunt, delectus doloribus adipisci quaerat.
+            </p> --->
+
+            <div id="buttons" style=" display: flex; align-items: center;justify-content: center;">
+                <button type="submit" class="vid_btn vid_btn_watch">
+                    <i class="fa-solid fa-play left"></i>
+                    <div class="vid_btn_TextWatch"> RANDOM </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttons" style="margin-left: 20px;">
+        <button type="submit" class="vid_btn" id="add">
+            <div style="margin-top: 5px; color:black;"> All </div>
+        </button>
+
+        <button type="submit" class="vid_btn">
+            <div style="margin-top: 5px; color: black;  "> Filter </div>
+        </button>
+
+        <button type="submit" class="vid_btn">
+            <div style="margin-top: 5px; color: black"> Genre </div>
+        </button>
+    </div>
+
+    <br>
+
+    <div class="container-fluid neue" style="text-align: center; margin-bottom: 120px;">
+        <br>
+        <div class="row" id="watchlater">
+
+            <div>
+                <h3 class="font_bold font_white" style="margin-left: 3%;">Watchlist</h3>
+            </div>
+            <div class="col-sm-3 card_margins">
+                <img class="img_card" src="" id="movie_watch1">
+                <h5 class="font_black font_bold img_card_text" style="margin-left: 183px;">Movie</h5>
+            </div>
+
+            <div class="col-sm-3 card_margins">
+                <img class="img_card" src="" id="movie_watch2">
+                <h5 class="font_black font_bold img_card_text" style="margin-left: 183px;">Series</h5>
+            </div>
+
+            <div class="col-sm-3 card_margins">
+                <img class="img_card" src="" id="movie_watch3">
+                <h5 class="font_black font_bold img_card_text" style="margin-left: 183px;">Movie</h5>
+            </div>
+
+            <div class="col-sm-3 card_margins">
+                <img class="img_card" src="" id="movie_watch4">
+                <h5 class="font_black font_bold img_card_text" style="margin-left: 183px;">Movie</h5>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid neue font_white">
+        <div class="footer">
+            <div class="row">
+
+                <div class="col-sm-6 text-center">
+                    <ul>
+                        <li class="footer_texts left"><img
+                                src="Icons_and_logo/Icons_and_logo/BingeWatch_LOGO_White.svg">
+                        </li>
+                        <li class="footer_texts left">Frequently Asked Questions</li>
+                        <li class="footer_texts left">Contact Us</li>
+                        <li class="footer_texts left">
+                            <div> Help Center <br> Terms of Use</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 text-center">
+                    <ul>
+                        <li class="footer_texts left">
+                            <div>
+                                Connect With Us <br>
+                                <ul style="margin-left: -25px;">
+                                    <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/instagram_img.svg">
+                                    </li>
+                                    <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/twitter_img.svg">
+                                    </li>
+                                    <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/facebook_img.svg">
+                                    </li>
+                                    <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/TikTokLogo.svg">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="footer_texts left">BingeWatch© all rights reserved.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+</body>
+
+</html>

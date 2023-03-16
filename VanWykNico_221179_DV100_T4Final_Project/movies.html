@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- Links -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/cgw4zgv.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/97babfe0d4.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="js/index.js"></script>
+
+
+</head>
+
+<body>
+
+<!--Navbar start -->
+<nav class="nav_sticky">
+    <div class="container-fluid container-fluid_navbar">
+        <a class="navbar-brand" href="home.html">
+            <img src="Icons_and_logo/Icons_and_logo/BingeWatch_LOGO2.svg">
+        </a>
+
+        <ul class="navbar-nav navbar_pages me-auto mb-2 mb-lg-0" style="display: inline-table;">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">HOME</a>
+            </li>
+
+            <li class="nav-item navbar_li">
+                <a class="nav-link active_page" href="movies.html">MOVIES</a>
+            </li>
+
+            <li class="nav-item navbar_li">
+                <a class="nav-link" href="watchlist.html">WATCHLIST</a>
+            </li>
+        </ul>
+
+        <input type search="search" class="search_appearance" id="search_appearance" placeholder="Search"
+            data-search>
+
+        <ul class="nav navbar-nav account">
+            <li>
+                <a class="nav_accountLink" href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="account_name left" id="account_name_home">Jan</div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+<!-- Navbar end -->
+
+    <!-- Search Display Start -->
+    <div class="search_container_bg" id="bg_searchContainer">
+        <div class="search_container">
+            <div class="searchResults_container">
+
+                <div id="searchItem_container1">
+                    <div id="searchItem1">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img1">
+                            <div id="searchItem_Title1"> <!--Movie Title--> </div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container2">
+                    <div id="searchItem2">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img2">
+                            <div id="searchItem_Title2"><!--Movie Title--></div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container3">
+                    <div id="searchItem3">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img3">
+                            <div id="searchItem_Title3"><!--Movie Title--></div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container4">
+                    <div id="searchItem4">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img4">
+                            <div id="searchItem_Title4"><!--Movie Title--></div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container5">
+                    <div id="searchItem5">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img"
+                                id="searchItem_img5">
+                            <div id="searchItem_Title5"><!--Movie Title--></div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+            </div>
+            <div class="showingAllResults_container">
+                Showing all results
+            </div>
+        </div>
+    </div>
+    <!-- Search Display End -->
+
+    <!-- Search Display Start -->
+    <!-- <div class="search_container_bg" id="bg_searchContainer">
+        <div class="search_container">
+            <div class="searchResults_container">
+
+                <div id="searchItem_container1">
+                    <div id="searchItem1">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img" id="searchItem_img1">
+                            <div id="searchItem_Title1"> -->
+    <!--Movie Title-->
+    <!-- </div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container2">
+                    <div id="searchItem2">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img" id="searchItem_img2">
+                            <div id="searchItem_Title2"> -->
+    <!--Movie Title-->
+    <!-- </div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container3">
+                    <div id="searchItem3">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img" id="searchItem_img3">
+                            <div id="searchItem_Title3"> -->
+    <!--Movie Title-->
+    <!-- </div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container4">
+                    <div id="searchItem4">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img" id="searchItem_img4"> -->
+    <!-- <div id="searchItem_Title4"> -->
+    <!--Movie Title-->
+    <!-- </div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+                <div id="searchItem_container5">
+                    <div id="searchItem5">
+                        <div class="searchItem_Left">
+                            <img src="Icons_and_logo/noImage.png" alt="img" id="searchItem_img5">
+                            <div id="searchItem_Title5"> -->
+    <!--Movie Title-->
+    <!-- </div>
+                        </div>
+                        <div class="searchItem_Right">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="searchItemBorder" class="searchItemBorder"></div>
+                </div>
+
+            </div>
+            <div class="showingAllResults_container">
+                Showing all results
+            </div>
+        </div>
+    </div> -->
+    <!-- Search Display End -->
+
+    <!-- Hero image start -->
+    <div class="container-fluid neue font_white" id="hero_image">
+        <div class="row">
+
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-8">
+
+                <div class="left">
+                    <h3 id="movie_title_movie" class="font_54 font_bold" style="margin-left: -8px;">
+                    </h3>
+
+                    <div id="movie_info_movie">
+                        <ul>
+                            <li style="margin-right: 30px; margin-left: -40px;">
+                                <h5 class="font_bold" id="genre_movie">Erotic Romance</h5>
+                            </li>
+
+                            <li style="margin-left: 145px; margin-top: -32px;">
+                                <h5 class="font_bold sequal">Movie</h5>
+                            </li>
+
+                            <li style="margin-left: 270px; margin-top: -34px;">
+                                <div id="star">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li style="margin-left: 25px; margin-top: -21px;">
+                                            <h5 class="font_bold" id="movie_rating_movie">4.5</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li style="margin-left: 355px; margin-top: -34px;">
+                                <div id="watchtime">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-clock"></i>
+                                        </li>
+                                        <li style="margin-left: 25px; margin-top: -22px;">
+                                            <h5 class="font_bold">125 min</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <p id="movie_desc_movie" style="margin-left: -9px;">
+                        </p>
+
+                        <ul>
+                            <li id="vid_quality_movies" style="margin-left: -43px;">4k</li>
+                            <li id="dot" style="margin-left: 20px; font-size: 30px; margin-top: -43px;"> . </li>
+                            <li style="margin-left: 65px; margin-top: -26px;" id="release_date_movie"> 2009</li>
+                        </ul>
+                    </div>
+
+                    <div id="buttons buttons_movie">
+                        <button type="submit" class="vid_btn vid_btn_watch" >
+                            <i class="fa-solid fa-play left"></i>
+                            <div class="vid_btn_TextWatch"> WATCH NOW </div>
+                        </button>
+
+                        <button type="submit" class="vid_btn vid_btn_add" >
+                            <i class="fa-solid fa-plus"></i>
+                            <div class="vid_btn_TextAdd"> ADD LIST </div>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="container" id="">
+
+                    <img src="" class="topPickImg movie_block" id="img_OurTopPick">
+                    <div class="topPick_Label">
+
+
+                        <div class="topPick_Label-text">
+                            OUR TOP PICK
+                        </div>
+
+                        <div class="movieItem_Type" id="movieButton1">
+
+                            <div class="movie_playContainer">
+                                <a href="../myway/index.html">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                                <div class="movie_playText">
+                                    Watch
+                                </div>
+                            </div>
+                            <div class="movie_addListContainer">
+                                <div class="addList-icon_container">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <div class="movie_addListText">
+                                    Add
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-2"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-4"></div>
+            <!-- Filter Bar -->
+            <div class="col-sm-4">
+                <ul>
+                    <div id="buttons_filter_bar" style="display: inline;">
+                        <button type="submit" class="all_btn">
+                            <div style="margin-top: 5px;"> All </div>
+                        </button>
+
+                        <button type="submit" class="filter_btn">
+                            <div style="margin-top: 5px;"> Filter </div>
+                        </button>
+
+                        <button type="submit" class="gerne_btn">
+                            <div style="margin-top: 5px;"> Genre </div>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <!-- Filter Bar -->
+
+            <div class="col-sm-4"></div>
+
+        </div>
+
+    </div>
+    <!-- Hero image end -->
+
+    <!-- Movies start -->
+  <!-- Drama Start -->
+  <div class="container-fluid neue" id="drama" style="margin-top: -50px; margin-left: -15px;">
+    <h3 class="font_bold font_white drama">Drama</h3>
+
+    <div class="row" style="margin-left: 10px;">
+        <div class="col-sm-2 card_margins" id="movie_block1_parent">
+            <img class="movie_block" id="movie_block1" src=" ">
+            <h5 class="font_black font_bold img_card_text_movies">Series</h5>
+
+            <div id="btnsContainer1">
+                <button id="btnWatch_1">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_1">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block2_parent">
+            <img class="movie_block" id="movie_block2" src=" ">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer2">
+                <button id="btnWatch_2">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_2">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block3_parent">
+            <img class="movie_block" id="movie_block3" src=" ">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer3">
+                <button id="btnWatch_3">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_3">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block4_parent">
+            <img class="movie_block" id="movie_block4" src=" ">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer4">
+                <button id="btnWatch_4">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_4">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block5_parent">
+            <img class="movie_block" id="movie_block5" src=" ">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer5">
+                <button id="btnWatch_5">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_5">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block6_parent">
+            <img class="movie_block" id="movie_block6" src=" ">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer6">
+                <button id="btnWatch_6">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_6">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+</div>
+<!-- Drama End -->
+
+<!-- Action Start -->
+<div class="container-fluid neue" id="action" style="margin-top: 25px; margin-left: -15px;">
+    <h3 class="font_bold font_white drama">Action</h3>
+
+    <div class="row" style="margin-left: 10px;">
+        <div class="col-sm-2 card_margins" id="movie_block7_parent">
+            <img class="movie_block" id="movie_block7"
+                src="../Icons_and_logo/Default_Images/Posters/Series/walking_dead.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Series</h5>
+
+            <div id="btnsContainer7">
+                <button id="btnWatch_7">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_7">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block8_parent">
+            <img class="movie_block" id="movie_block8"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/ant_man_ver5.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Series</h5>
+
+            <div id="btnsContainer8">
+                <button id="btnWatch_8">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_8">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block9_parent">
+            <img class="movie_block" id="movie_block9"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/black_panther.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer9">
+                <button id="btnWatch_9">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_9">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block10_parent">
+            <img class="movie_block" id="movie_block10"
+                src="../Icons_and_logo/Default_Images/Posters/Series/castlevania.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Series</h5>
+
+            <div id="btnsContainer10">
+                <button id="btnWatch_10">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_10">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block11_parent">
+            <img class="movie_block" id="movie_block11"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/bullet_train.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer11">
+                <button id="btnWatch_11">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_11">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block12_parent">
+            <img class="movie_block" id="movie_block12"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/world_war_z.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer12">
+                <button id="btnWatch_12">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_12">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Action End -->
+
+<!-- Sci-Fi Start -->
+<div class="container-fluid neue" id="sci-fi" style="margin-top: 25px; margin-left: -15px;">
+    <h3 class="font_bold font_white drama">Sci-Fi</h3>
+
+    <div class="row" style="margin-left: 10px;">
+        <div class="col-sm-2 card_margins" id="movie_block13_parent">
+            <img class="movie_block" id="movie_block13"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/e_t_poster.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer13">
+                <button id="btnWatch_13">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_13">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block14_parent">
+            <img class="movie_block" id="movie_block14"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/i_robot.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer14">
+                <button id="btnWatch_14">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_14">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block15_parent">
+            <img class="movie_block" id="movie_block15"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/2012_Poster.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer15">
+                <button id="btnWatch_15">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_15">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block16_parent">
+            <img class="movie_block" id="movie_block16"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/invasion_poster.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer16">
+                <button id="btnWatch_16">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_16">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block17_parent">
+            <img class="movie_block" id="movie_block17"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/solo.jpeg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer17">
+                <button id="btnWatch_17">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_17">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block18_parent">
+            <img class="movie_block" id="movie_block18"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/star_wars_last_jedi_poster.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer18">
+                <button id="btnWatch_18">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_18">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Sci-Fi End -->
+
+<!-- Comedy -->
+<div class="container-fluid neue" id="comedy" style="margin-top: 25px; margin-left: -15px;">
+    <h3 class="font_bold font_white drama">Comedy</h3>
+
+    <div class="row" style="margin-left: 10px;">
+        <div class="col-sm-2 card_margins" id="movie_block19_parent">
+            <img class="movie_block" id="movie_block19"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/shrek.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Series</h5>
+
+            <div id="btnsContainer19">
+                <button id="btnWatch_19">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_19">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block20_parent">
+            <img class="movie_block" id="movie_block20"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/the_lost_city.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer20">
+                <button id="btnWatch_20">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_20">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block21_parent">
+            <img class="movie_block" id="movie_block21"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/chicken_run.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer21">
+                <button id="btnWatch_21">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_21">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block22_parent">
+            <img class="movie_block" id="movie_block22"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/corpse_bride.jpg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer22">
+                <button id="btnWatch_22">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_22">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block23_parent">
+            <img class="movie_block" id="movie_block23"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/cinderella.jpeg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer23">
+                <button id="btnWatch_23">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_23">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 card_margins" id="movie_block24_parent">
+            <img class="movie_block" id="movie_block24"
+                src="../Icons_and_logo/Default_Images/Posters/Movie/treasure_planet.jpeg">
+            <h5 class="font_black font_bold img_card_text_movies">Movie</h5>
+
+            <div id="btnsContainer24">
+                <button id="btnWatch_24">
+                    <i class="fa-solid fa-play playbtn"></i>
+                    Play
+                </button>
+                <button id="btnAdd_24">
+                    <i class="fa-solid fa-plus addbtn"></i>
+                    Add
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Comedy End -->
+    <!-- Footer Start -->
+    <div class="container-fluid neue font_white">
+        <div class="footer">
+            <div class="row">
+
+                <div class="col-sm-6 text-center">
+                    <ul>
+                        <li class="footer_texts left"><img
+                                src="Icons_and_logo/Icons_and_logo/BingeWatch_LOGO_White.svg">
+                        </li>
+                        <li class="footer_texts left">Frequently Asked Questions</li>
+                        <li class="footer_texts left">Contact Us</li>
+                        <li class="footer_texts left">
+                            <div> Help Center <br> Terms of Use</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 text-center">
+                    <ul>
+                        <li class="footer_texts left">
+                            <div>
+                                Connect With Us <br>
+                                <ul style="margin-left: -25px;">
+                                    <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/instagram_img.svg">
+                                    </li>
+                                    <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/twitter_img.svg">
+                                    </li>
+                                    <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/facebook_img.svg">
+                                    </li>
+                                    <li class="footer_image"><img src="Icons_and_logo/Icons_and_logo/TikTokLogo.svg">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="footer_texts left">BingeWatch© all rights reserved.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+</body>
+
+</html>
