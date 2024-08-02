@@ -2645,8 +2645,4 @@ $(document).ready(function () {
 
     })
     //Search Display End//
-
-    
-
-
 });
